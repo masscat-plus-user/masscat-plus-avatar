@@ -1,0 +1,55 @@
+name: 不具合共有
+description: 不具合共有用のテンプレートです
+title: "[不具合]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        改変時や使用時などに気がついた不具合を共有するためのものです。  
+        ここは非公式および非公認の場のため、不具合は各自の責任で作成元に報告しましょう。
+  - type: textarea
+    id: description
+    attributes:
+      label: どのような現象か？
+      description: 不具合の内容を簡潔に書きます。
+      placeholder: （例）○○のポーズを取ると服の内側が透けて見える
+    validations:
+      required: true
+  - type: textarea
+    id: prepare
+    attributes:
+      label: 前提条件
+      description: 不具合が再現する前提条件・環境・設定を書きます。心当たりがあるものは全部書きましょう。
+      placeholder: （例）○○のシェイプキーを100にしておく、××のワールドに行く
+    validations:
+      required: true
+  - type: textarea
+    id: process
+    attributes:
+      label: 再現手順
+      description: 不具合を再現させる方法を丁寧＆簡潔に書きます。番号付きの箇条書きで書くと良いです。
+      placeholder: |
+        （例）1. ○○を××する
+        　　　2. ○○の部分をほげほげする
+    validations:
+      required: true
+  - type: textarea
+    id: expect
+    attributes:
+      label: 期待する結果
+      description: 不具合が発生しない場合に期待する結果を書きます。
+      placeholder: （例）服の内側が透けないこと
+    validations:
+      required: true
+  - type: textarea
+    id: workaround
+    attributes:
+      label: 回避方法
+      description: 不具合を回避できる方法があれば書きます。ない場合は「回避方法なし」などと書きましょう。
+      placeholder: （例）回避方法なし
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: 公式に不具合が修正されたら、IssueのステータスをClosedにするのを忘れずに。

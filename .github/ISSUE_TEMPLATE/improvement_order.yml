@@ -1,0 +1,37 @@
+name: 改善・対応要望
+description: 改善・対応要望用のテンプレートです
+title: "[改善要望・対応要望]: "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        改善・対応の要望を共有するためのものです。  
+        ここは非公式および非公認の場のため、書いた内容が確実に対応される保証はありません。
+  - type: textarea
+    id: description
+    attributes:
+      label: 要望の内容
+      description: 要望内容を簡潔に書きます。
+      placeholder: （例）○○をシェイプキーで調整できるようにして欲しい
+    validations:
+      required: true
+  - type: textarea
+    id: reson
+    attributes:
+      label: 要望理由
+      description: 要望する理由を書きます。具体的・一般的であるほど、これを読む人がイメージしやすくなります。
+      placeholder: （例）衣装を着せるとき貫通しやすい箇所なので。
+    validations:
+      required: false
+  - type: textarea
+    id: pros-cons
+    attributes:
+      label: メリット・デメリット
+      description: この要望が実現することによるメリットや、（あれば）デメリットを書きます。
+      placeholder: （例）着せられる衣装のバリエーションが増える
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: 公式に対応されたら、IssueのステータスをClosedにするのを忘れずに。
